@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --color-one: #00383e;
+    --color-two: #bceae6;
+    --color-three: #fed1a5;
+    --color-four: #cc5075;
+    --color-five: #091b4b;
+    --color-white: #f5f5f5;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+    color: var(--color-white);
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+    font-size: calc(2.5vw + 1.5vh);
+}
+
+.hide {
+    display: none;
+}
+
+header {
+    animation: myanime 6000s infinite alternate;
+    background: linear-gradient(to right, var(--color-one), var(--color-five));
+    text-align: center;
+    padding: calc(1.3vw + 1vh);
+}
+
+main {
+    margin: 10px 20px 10px 10px;
+}
+
+#city-search {
+    padding: 0.5rem;
+}
+
+.search-btn {
+    color: var(--color-white);
+    background-color: var(--color-four);
+    font-size: calc(1vw + 1vh);
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.city-history {
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--color-one);
+}
+
+.history-btn {
+    margin: 5px 0px;
+    border: 1px solid var(--color-one);
+    border-radius: 3px;
+}
+
+.results-container {
+    margin: 1rem;
+}
+
+.info-container {
+    border: 1px solid var(--color-five);
+    padding: 0.5rem;
+}
+  
+.weather-info {
+    font-weight: 500;
+}
+  
+.city-name {
+    font-weight: bold;
+}
+  
+.forecast-container {
+    margin-top: 1rem;
+}
+  
+.forecast-box {
+    color: var(--color-white);
+    background: linear-gradient(to right, var(--color-one), var(--color-five));
+    padding: 3rem 2rem;
+}
+
+.forecast-box:hover {
+    transition-duration: 750ms;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0, 0.7);
+}
+  
+.low {
+    border-radius: 3px;
+    background-color: green;
+    padding: 0 3px;
+}
+  
+.mid {
+    border-radius: 3px;
+    background-color: yellow;
+    padding: 0 3px;
+}
+  
+.high {
+    border-radius: 3px;
+    background-color: red;
+    padding: 0 3px;
+}
+
+button:hover {
+    transition-duration: 2000ms;
+    color: var(--color-five);
+    background-color: var(--color-three);
+}
