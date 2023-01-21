@@ -10,3 +10,39 @@ var cityHistoryBtn = document.querySelector("#city-history");
 var currentDate = moment().format("MM/DD/YYYY");
 var dayIndex = 1
 var cityHistory = [];
+
+var formSubmitHandler = function(event) {
+    event.preventDefault();
+  
+    var userCity = citySearchEl.value.trim();
+  
+    if (userCity) {
+      getLatLong(userCity);
+      citySearchEl.value = "";
+      alertEl.className = "alert"
+      alertEl.classList.add("hide");
+    }
+    else {
+      citySearchEl.value = "";
+      alertEl.classList.remove("hide");
+    }
+};
+
+var getLatLong = function(userInput) {
+    var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${userInput}&units=imperial&appid=e6f1180431902688ee08af2326efb755`
+    fetch(apiUrl)
+        .then(function(response) {
+          if (response.ok) {
+            response.json().then(function(data) {
+              var cityName = data.name;
+              dayIndex = 1;
+              getForecast(data, cityName);
+              searchHistory(cityName);
+            })
+          }
+          else {
+            alertEl.classList.remove("hide");
+            return formSubmitHandler();
+          }
+        })
+  }
