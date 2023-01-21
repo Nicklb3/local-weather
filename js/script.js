@@ -45,4 +45,30 @@ var getLatLong = function(userInput) {
             return formSubmitHandler();
           }
         })
-  }
+}
+
+var getForecast = function(data, cityName) {
+    resultsContainer.classList.remove("hide");
+    var latEl = data.coord.lat
+    var longEl = data.coord.lon
+    var apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latEl}&lon=${longEl}&units=imperial&appid=e6f1180431902688ee08af2326efb755`
+    fetch(apiUrl)
+        .then(function(response) {
+          if (response.ok) {
+            response.json().then(function(data) {
+              displayForecast(data, cityName)
+            })
+          }
+        })
+}   
+
+
+
+
+
+
+
+
+getSearchHistory();
+searchBtn.addEventListener("click", formSubmitHandler);
+cityHistoryBtn.addEventListener("click", recallHistory);
