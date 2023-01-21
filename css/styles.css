@@ -22,7 +22,7 @@ body {
 
 .title {
     color: var(--color-white);
-    font-weight: 500;
+    font-weight: 300;
     margin-bottom: 1.8rem;
     font-size: calc(2.5vw + 1.5vh);
 }
@@ -33,7 +33,7 @@ body {
 
 header {
     animation: myanime 6000s infinite alternate;
-    background: linear-gradient(to right, var(--color-one), var(--color-five));
+    background: linear-gradient(to right, var(--color-two), var(--color-one), var(--color-five));
     text-align: center;
     padding: calc(1.3vw + 1vh);
 }
@@ -96,7 +96,7 @@ main {
   
 .forecast-box {
     color: var(--color-white);
-    background: linear-gradient(to right, var(--color-one), var(--color-five));
+    background: linear-gradient(to right, var(--color-two), var(--color-one), var(--color-five));
     padding: 3rem 2rem;
 }
 
