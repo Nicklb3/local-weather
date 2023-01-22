@@ -1,6 +1,4 @@
-<div align="center">
-# Local-Weather
-</div>
+<center># Local-Weather</center>
 
 A simple yet powerful weather application that allows you to quickly and easily check the current weather conditions and forecast for any location in the world.
 
