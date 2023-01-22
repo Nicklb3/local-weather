@@ -21,4 +21,4 @@ A simple yet powerful weather application that allows you to quickly and easily 
 
 ### github link: https://github.com/Nicklb3/local-weather.git
 
-### deployed link:
+### deployed link: https://nicklb3.github.io/local-weather/
