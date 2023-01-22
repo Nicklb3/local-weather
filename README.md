@@ -1,6 +1,17 @@
-# local-weather
+<center># Local-Weather</center>
 
-An app to find local weather
+A simple yet powerful weather application that allows you to quickly and easily check the current weather conditions and forecast for any location in the world.
+
+---
+
+## Features
+
+- Real-time weather updates for current location or any location around the world
+- Hourly and daily forecasts
+- User-friendly interface
+- Option to switch between Celsius and Fahrenheit
+- Ability to save favorite locations
+- Push notifications for severe weather alerts
 
 ---
 
