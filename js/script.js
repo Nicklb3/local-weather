@@ -161,15 +161,6 @@ var displayForecast = function(weatherData, cityName) {
     }
 }
 
-
-
-
-
-
-
-
-
-
 getSearchHistory();
 searchBtn.addEventListener("click", formSubmitHandler);
 cityHistoryBtn.addEventListener("click", recallHistory);
